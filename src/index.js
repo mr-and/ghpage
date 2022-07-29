@@ -9,23 +9,23 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/books" element={<Books />} />
-        <Route
-          path="*"
-          element={
-              <div style={{ 
-                fontSize: "404px",
-                fontWeight: "404", 
-                display: "flex",
-                color: "white", 
-                justifyContent: "center" }}
-                >404</div>
-      }
-    />
-      </Routes>
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/books" element={<Books />} />
+      <Route
+        path="*"
+        element={
+          <div style={{ 
+            fontSize: "404px",
+            fontWeight: "404", 
+            display: "flex",
+            color: "white", 
+            justifyContent: "center" }}
+          >404</div>
+        }
+      />
+    </Routes>
   </Router>
 );
 
