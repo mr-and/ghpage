@@ -1,24 +1,116 @@
-.navbar {
-    width: 100%;
-    height: 100px;
-    background: #24272e;
-    /* background: url('../../../public/ophelia_02.png');
-    background-position: center;
-    background-size: auto; */
+  .navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(27, 27, 34) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-   .links {
-    width: 100%;
-    height: 100%;
+  .navbarLogo {
+    color: rgb(239, 239, 239);
+    text-decoration: none;
+    font-size: 25px;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .navMenu {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    color: rgb(239, 239, 239);
+    text-decoration: none;
+  }
+
+  .navMenu a {
+    color: rgb(239, 239, 239);
+    text-decoration: none;
+  }
+
+  .navMenu a:hover {
+    color: rgb(178, 213, 34);
+  }
+  
+  .navItem {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-  } 
+  }
   
-  .navbar a {
+  .navLinks li {
     color: white;
     text-decoration: none;
-    margin: 20px;
-    font-size: 25px;
+    padding: 0.5rem 1rem;
+  }
+
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .menuIcon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navMenu {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      height: 90vh;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .navMenu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navLinks {
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .navbarLogo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menuIcon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
   }
