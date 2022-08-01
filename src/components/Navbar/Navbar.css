@@ -1,5 +1,5 @@
   .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(27, 27, 34) 100%);
+    background:rgb(27, 27, 27);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -53,12 +53,9 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-size: 18px;
   }
 
-  .fa-bars {
-    color: #fff;
-  }
-  
   .menuIcon {
     display: none;
   }
@@ -67,10 +64,10 @@
     .navMenu {
       display: flex;
       flex-direction: column;
-      width: 95%;
-      height: 90vh;
+      width: 100%;
+      height: calc(100vh - 80px);
       position: absolute;
-      top: 60px;
+      top: 80px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -84,6 +81,15 @@
       z-index: 1;
       align-items: center;
       justify-content: center;
+    }
+
+    .navMenu.active a{
+      padding: 10px;
+      font-size: 30px;
+    }
+
+    .navMenu.active a:hover{
+      box-shadow: 0 0 15px rgb(178, 213, 34) !important;
     }
   
     .navLinks {
@@ -109,8 +115,9 @@
       cursor: pointer;
     }
   
-    .fa-times {
-      color: #fff;
+    .fa-times, .fa-bars {
+      color: rgb(178, 213, 34);
       font-size: 2rem;
     }
+    
   }

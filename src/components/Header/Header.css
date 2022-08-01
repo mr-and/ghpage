@@ -1,12 +1,19 @@
 .greetingMsg {
     text-align: center;
-    color: white;
+    color: beige;
     font-size: 50px;
     position: relative;
     top: 30%;
 }
 
 p{
-    font-size: 30px;
-    color: beige;
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgb(178, 213, 34);
 }
+
+
+#no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
