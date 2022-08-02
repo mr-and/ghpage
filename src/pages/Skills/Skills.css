@@ -1,0 +1,31 @@
+.skl{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill__box{
+    padding: 10px;
+    text-align: center;
+}
+
+.firstSkillsBlock, .secondSkillsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.skill__title{
+    padding: 10px;
+    color: beige;
+}
+
+img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+p{
+    padding: 30px;
+}

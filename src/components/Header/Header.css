@@ -9,7 +9,10 @@
 p{
     font-size: 25px;
     margin-top: 10px;
-    color: rgb(178, 213, 34);
+    font-weight: 450;
+    background: linear-gradient(45deg, rgb(132, 158, 25) 33%, rgb(157, 189, 30) 66%, rgb(178, 213, 34));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

@@ -7,7 +7,7 @@
   }
   
   .navbarLogo {
-    color: rgb(239, 239, 239);
+    color: beige;
     text-decoration: none;
     font-size: 25px;
     justify-self: start;
@@ -72,7 +72,7 @@
       opacity: 1;
       transition: all 0.5s ease;
     }
-  
+
     .navMenu.active {
       background: #242222;
       left: 0;
@@ -88,10 +88,6 @@
       font-size: 30px;
     }
 
-    .navMenu.active a:hover{
-      box-shadow: 0 0 15px rgb(178, 213, 34) !important;
-    }
-  
     .navLinks {
       padding: 2rem;
       width: 100%;
