@@ -15,7 +15,7 @@ function CV() {
 
   return (
     <div className="resumeBox">
-      <div class="resumeContainer">
+      <div className="resumeContainer">
         <Document file={resume} className="resume">
           <Page pageNumber={1} scale={width > 786 ? 1.5 : 0.6} />
         </Document>
