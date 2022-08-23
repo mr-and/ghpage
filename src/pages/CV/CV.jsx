@@ -14,16 +14,19 @@ function CV() {
   }, []);
 
   return (
-    <div className="resumeBox">
-      <div className="resumeContainer">
-        <Document file={resume} className="resume">
+    <div className="resume">
+      <div className="resume__container">
+        <Document file={resume}>
           <Page pageNumber={1} scale={width > 786 ? 1.5 : 0.6} />
         </Document>
         <button
+          className="resume__container__btn"
           href={resume}
           target="_blank"
         >
-          <a href={resume} download>Download</a>
+          <a href={resume} 
+            download>Download
+          </a>
         </button>
       </div>
     </div>

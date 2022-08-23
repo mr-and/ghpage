@@ -1,119 +1,119 @@
-  .navbar {
-    background:rgb(27, 27, 27);
-    height: 80px;
+.navbar {
+  background: rgb(27, 27, 27);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: beige;
+  text-decoration: none;
+  font-size: 25px;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.navbar__links__menu {
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  color: rgb(239, 239, 239);
+  text-decoration: none;
+}
+
+.navbar__links__menu a {
+  color: rgb(239, 239, 239);
+  text-decoration: none;
+}
+
+.navbar__links__menu a:hover {
+  color: rgb(178, 213, 34);
+}
+
+.navbar__links__item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__links li {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__links__menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
   }
-  
-  .navbarLogo {
-    color: beige;
-    text-decoration: none;
-    font-size: 25px;
-    justify-self: start;
-    margin-left: 20px;
+
+  .navbar__links__menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__links__menu.active a {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .navbar__links {
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
     cursor: pointer;
-    text-decoration: none;
+  }
+
+  .fa-times,
+  .fa-bars {
+    color: rgb(178, 213, 34);
     font-size: 2rem;
   }
-  
-  .fa-firstdraft {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
-  }
-  
-  .navMenu {
-    height: 80px;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 70vw;
-    justify-content: end;
-    color: rgb(239, 239, 239);
-    text-decoration: none;
-  }
-
-  .navMenu a {
-    color: rgb(239, 239, 239);
-    text-decoration: none;
-  }
-
-  .navMenu a:hover {
-    color: rgb(178, 213, 34);
-  }
-  
-  .navItem {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navLinks li {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 18px;
-  }
-
-  .menuIcon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 960px) {
-    .navMenu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: calc(100vh - 80px);
-      position: absolute;
-      top: 80px;
-      left: -100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-
-    .navMenu.active {
-      background: #242222;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .navMenu.active a{
-      padding: 10px;
-      font-size: 30px;
-    }
-
-    .navLinks {
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .navbarLogo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
-    }
-  
-    .menuIcon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  
-    .fa-times, .fa-bars {
-      color: rgb(178, 213, 34);
-      font-size: 2rem;
-    }
-    
-  }
+}

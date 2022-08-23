@@ -1,28 +1,33 @@
 import React from "react";
 
-import frstData from "../../data/FirstSkills";
-import secData from "../../data/SecondSkills";
+import FirstData from "../../data/FirstSkills";
+import SecondData from "../../data/SecondSkills";
 
 import "./Skills.css";
 
 function Skills() {
   return (
-    <div className="skl">
+    <div className="skills">
       <p>Main abilities</p>
-      <div className="firstSkillsBlock">
-        {frstData.map((skill, index) => (
-          <div key={index} className="skill__box">
-            <div className="skill__title">{skill.title}</div>
-            <img src={`img/skill_logo/${skill.img}`} className="skill__img" alt="skill-img" />
+      <div className="skills__block">
+        {FirstData.map((skill, index) => (
+          <div key={index} className="skills__block__item">
+            <div className="skills__block__item__title">{skill.title}</div>
+            <img src={`img/skill_logo/${skill.img}`} 
+              className="skills__block__item__img" 
+              alt="skill-img" />
           </div>
         ))}
       </div>
       <p>Interested in</p>
-      <div className="secondSkillsBlock">
-        {secData.map((skill, index) => (
-          <div key={index} className="skill__box">
-            <div className="skill__title">{skill.title}</div>
-            <img src={`img/skill_logo/${skill.img}`} className="skill__img" alt="skill-img" />
+      <div className="skills__block">
+        {SecondData.map((skill, index) => (
+          <div key={index} className="skills__block__item">
+            <div className="skills__block__item__title">{skill.title}</div>
+            <img src={`img/skill_logo/${skill.img}`} 
+              className="skills__block__item__img" 
+              alt="skill-img" 
+            />
           </div>
         ))}
       </div>

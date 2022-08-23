@@ -1,22 +1,26 @@
-.greetingMsg {
-    text-align: center;
-    color: beige;
-    font-size: 50px;
-    position: relative;
-    top: 30%;
+.header {
+  text-align: center;
+  color: beige;
+  font-size: 50px;
+  position: relative;
+  top: 30%;
 }
 
-p{
-    font-size: 25px;
-    margin-top: 10px;
-    font-weight: 450;
-    background: linear-gradient(45deg, rgb(132, 158, 25) 33%, rgb(157, 189, 30) 66%, rgb(178, 213, 34));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+p {
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 450;
+  background: linear-gradient(
+    45deg,
+    rgb(132, 158, 25) 33%,
+    rgb(157, 189, 30) 66%,
+    rgb(178, 213, 34)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 
 #no-scroll {
-    overflow: hidden;
-    height: 100vh;
-  }
+  overflow: hidden;
+  height: 100vh;
+}

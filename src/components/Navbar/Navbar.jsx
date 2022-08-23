@@ -17,30 +17,30 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <Link to="/" className="navbarLogo">
+      <Link to="/" className="navbar__logo">
         Main.class
       </Link>
-      <div className="menuIcon" onClick={handleOpen}>
+      <div className="menu-icon" onClick={handleOpen}>
         <i className={isOpen ? "fas fa-times" : "fas fa-bars"} />
       </div>
-      <div className="navLinks">
-        <ul className={isOpen ? "navMenu active" : "navMenu"}>
-          <li className="navItem">
+      <div className="navbar__links">
+        <ul className={isOpen ? "navbar__links__menu active" : "navbar__links__menu"}>
+          <li className="navbar__links__item">
             <Link to="/" onClick={handleClose}>
               .goHome( )
             </Link>
           </li>
-          <li className="navItem">
+          <li className="navbar__links__item">
             <Link to="/skills" onClick={handleClose}>
               .showSkills( )
             </Link>
           </li>
-          <li className="navItem">
+          <li className="navbar__links__item">
             <Link to="/cv" onClick={handleClose}>
               .showCV( )
             </Link>
           </li>
-          <li className="navItem">
+          <li className="navbar__links__item">
             <Link to="/books" onClick={handleClose}>
               .showBooks( )
             </Link>

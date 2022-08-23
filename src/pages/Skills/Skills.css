@@ -1,31 +1,32 @@
-.skl{
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.skill__box{
-    padding: 10px;
-    text-align: center;
+.skills {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.firstSkillsBlock, .secondSkillsBlock {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
+.skills__block {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
 }
 
-.skill__title{
-    padding: 10px;
-    color: beige;
+.skills__block__item {
+  padding: 10px;
+  text-align: center;
 }
 
-img {
-    max-height: 100px;
-    max-width: 100px;
+.skills__block__item__title {
+  padding: 10px;
+  color: beige;
 }
 
-p{
-    padding: 30px;
+.skills__block__item__img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+p {
+  padding: 30px;
 }
