@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mr-and/ghpage/static/css/main.cc1150dd.css",
-    "main.js": "/mr-and/ghpage/static/js/main.83bcf256.js",
-    "pdf.worker.js": "/mr-and/ghpage/e7e915313973ba1d49f9bb2a1998626e.js",
-    "static/media/blank_cv.pdf": "/mr-and/ghpage/static/media/blank_cv.ba75b0dfa0959adfc34f.pdf",
-    "index.html": "/mr-and/ghpage/index.html",
-    "static/media/pre.svg": "/mr-and/ghpage/static/media/pre.c8250c1d00bf506f9b61.svg",
-    "main.cc1150dd.css.map": "/mr-and/ghpage/static/css/main.cc1150dd.css.map",
-    "main.83bcf256.js.map": "/mr-and/ghpage/static/js/main.83bcf256.js.map"
+    "main.css": "/static/css/main.36f3ffa0.css",
+    "main.js": "/static/js/main.10daf28e.js",
+    "pdf.worker.js": "/e7e915313973ba1d49f9bb2a1998626e.js",
+    "static/media/blank_cv.pdf": "/static/media/blank_cv.ba75b0dfa0959adfc34f.pdf",
+    "index.html": "/index.html",
+    "static/media/pre.svg": "/static/media/pre.c8250c1d00bf506f9b61.svg",
+    "main.36f3ffa0.css.map": "/static/css/main.36f3ffa0.css.map",
+    "main.10daf28e.js.map": "/static/js/main.10daf28e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc1150dd.css",
-    "static/js/main.83bcf256.js"
+    "static/css/main.36f3ffa0.css",
+    "static/js/main.10daf28e.js"
   ]
 }
